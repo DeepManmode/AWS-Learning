@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "This is my first cloud formation template for ec2 instance"
+Resources:
+ MyEC2Instance:
+   Type: AWS::EC2::Instance
+   Properties:
+     ImageId: ami-061834c398a414937
+     AvailabilityZone: 'us-east-1c'
+     InstanceType: t3.micro
+     SecurityGroupIds: 
+       - sg-0ef3b33691b969f66
+     KeyName: aws_login
+#  MyS3Bucket:
+#     Type: AWS::S3::Bucket
+#     Properties:
+#      BucketName: aws.deep.bucket
+#      VersioningConfiguration: 
+#       Status: Enabled
+   
+
+    
+    
